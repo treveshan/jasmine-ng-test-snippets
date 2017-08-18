@@ -1,0 +1,69 @@
+{
+    // To use snippets, 
+    // open User Snippets under File > Preferences (Code > Preferences on Mac) 
+    // and select the language for which the snippets should appear.
+    // copy the content in this file and paste in typescript.json
+    // if you lost.... then bro really just go to 
+    // https://code.visualstudio.com/docs/editor/userdefinedsnippets
+    // all the best MOB
+    "Simple Describe Jasmine Test": {
+        "prefix": "testd",
+        "body": [
+            "describe(`${1:description}`, () => {",
+            "\tit(`should ${2:description}`, () => {",
+            "\t\t// Arrange",
+            "\t\t$3",
+            "\t\t// Act",
+            "\t\t$4",
+            "\t\t// Assert",
+            "\t\t$5",
+            "\t});",
+            "});"
+        ],
+        "description": "Simple Jasmine Test Format"
+    },
+    "Simple It Jasmine Test": {
+        "prefix": "testit",
+        "body": [
+            "it(`should ${1:description}`, () => {",
+            "\t\t// Arrange",
+            "\t\t$2",
+            "\t\t// Act",
+            "\t\t$3",
+            "\t\t// Assert",
+            "\t\t$4",
+            "});"
+        ],
+        "description": "Simple Jasmine it Test Format"
+    },
+    "Async Describe Jasmine Test": {
+        "prefix": "testd-async",
+        "body": [
+            "describe(`${1:description}`, () => {",
+            "\tit(`should ${2:description}`, fakeAsync(() => {",
+            "\t\t// Arrange",
+            "\t\t$3",
+            "\t\t// Act",
+            "\t\t$4",
+            "\t\t// Assert",
+            "\t\t$5",
+            "\t}));",
+            "});"
+        ],
+        "description": "Simple Async Jasmine Test Format"
+    },
+    "Async It Jasmine Test": {
+        "prefix": "testit-async",
+        "body": [
+            "it(`should ${1:description}`,  fakeAsync(() => {",
+            "\t\t// Arrange",
+            "\t\t$2",
+            "\t\t// Act",
+            "\t\t$3",
+            "\t\t// Assert",
+            "\t\t$4",
+            "}));"
+        ],
+        "description": "Simple Async Jasmine it Test Format"
+    }
+}

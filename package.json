@@ -1,0 +1,19 @@
+{
+    "name": "jasmine-ng-test-snippets",
+    "displayName": "Jasmine NG Test Snippets",
+    "description": "A collection of common test snippets from jasmine typescript tests for angular x",
+    "version": "0.0.1",
+    "publisher": "treveshannaidoo",
+    "engines": {
+        "vscode": "^1.15.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [{
+            "language": "typescript",
+            "path": "./snippets/snippets.json"
+        }]
+    }
+}
